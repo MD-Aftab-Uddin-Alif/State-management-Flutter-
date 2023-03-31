@@ -33,9 +33,19 @@ class _Count_exampleState extends State<Count_example> {
       body: Center(
         child: Consumer<CountProvider>(builder: (context, value, child){
           //print("Only this widget build");
-          return Text(countProvider.count.toString(),
-            style: TextStyle(
-              fontSize: 50,
+          return Container(
+            height: 50,
+            width: 200,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(25),
+              color: Colors.blue,
+            ),
+            child: Center(
+              child: Text(countProvider.count.toString(),
+                style: TextStyle(
+                  fontSize: 50,
+                ),
+              ),
             ),
           );
         }),

@@ -36,16 +36,51 @@ class _Provider_stateState extends State<Provider_state> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Center(
-            child: Text(DateTime.now().hour.toString()+":"+DateTime.now().minute.toString()+":"+DateTime.now().second.toString(),
-              style:  TextStyle(
-                fontSize: 50,
+            child: Container(
+              height: 380,
+              width: 330,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                color: Colors.yellow,
+              ),
+              child: Text("Provider\n1. Generally we used to setstate but it's not essential ways because it's rebuild the full application/widget and then the performance of a application is very slow.\n2. For remove this problem we used to provider like cart for a ecommerce site.\n3. It's a state management technique\n4. It's used for different ways like business logic, ui separate, update widget, change state.",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
-          Center(
-            child: Text(count.toString(),
-              style:  TextStyle(
-                fontSize: 50,
+          SizedBox(height: 30,),
+          Container(
+            height: 40,
+            width: 200,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(25),
+              color: Colors.green,
+            ),
+            child: Center(
+              child: Text(DateTime.now().hour.toString()+":"+DateTime.now().minute.toString()+":"+DateTime.now().second.toString(),
+                style:  TextStyle(
+                  fontSize: 30,
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 30,),
+          Container(
+            height: 40,
+            width: 80,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(25),
+              color: Colors.blue,
+            ),
+            child: Center(
+              child: Text(count.toString(),
+                style:  TextStyle(
+                  fontSize: 30,
+                ),
               ),
             ),
           ),

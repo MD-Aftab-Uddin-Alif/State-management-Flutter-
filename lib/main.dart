@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:state_management/home_page.dart';
 import 'package:state_management/provider/count_provider.dart';
 import 'package:state_management/provider_state.dart';
 import 'package:state_management/screen/count_example.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: Count_example(),
+        home: Homepage(),
       )
     );
   }

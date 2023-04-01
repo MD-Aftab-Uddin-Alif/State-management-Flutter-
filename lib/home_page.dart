@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:state_management/provider_state.dart';
 import 'package:state_management/screen/count_example.dart';
+import 'package:state_management/screen/example.dart';
 import 'package:state_management/statefull_widget.dart';
 import 'package:state_management/stateless_widget.dart';
 
@@ -112,6 +113,22 @@ class _HomepageState extends State<Homepage> {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) => Count_example(),
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                title: Text("Provider example",
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Colors.deepPurpleAccent,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => Example(),
                     ),
                   );
                 },
